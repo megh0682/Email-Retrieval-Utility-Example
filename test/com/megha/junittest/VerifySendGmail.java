@@ -16,6 +16,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -148,7 +149,7 @@ public class VerifySendGmail {
 	e.printStackTrace();
 }
 }
-	
+	@Ignore
 	@Test(timeout=1000)
 	public void testPrintParameters(){
 		System.out.println("Subject:"+Subject);
