@@ -75,7 +75,7 @@
        basedir="${reports.tests}/html"    
        update="true"
   />
-<!--mail mailhost="smtp.gmail.com" mailport="587" subject="Test Report" messagemimetype="text/html" enableStartTLS="true" user ="connecteduqa@gmail.com" password ="experience">
+<mail mailhost="smtp.gmail.com" mailport="587" subject="Test Report" messagemimetype="text/html" enableStartTLS="true" user ="connecteduqa@gmail.com" password ="experience">
   <from address="connecteduqa@gmail.com"/>
   <replyto address="connecteduqa@gmail.com"/>
   <to address="connecteduqa@gmail.com"/>
@@ -85,7 +85,7 @@
       <include name="**/*.zip"/>
     </fileset>
   </attachments>
-</mail-->
+</mail>
  </target>
 
 </project>
