@@ -1,0 +1,91 @@
+<project name = "WEB UI AUTOMATION" default="emailreport" basedir=".">
+
+<target name = "init">
+<echo>Running target init</echo>
+<property name="test_name" value="JavaMail Testing Project"/>
+<property name="src" value="src"/>
+<property name="test" value="test"/>
+<property name="dest" value="bin"/>
+<property name="src.tests" value="bin/com/megha/junittest/classes"/>
+<property name="reports.tests" value="reports"/>
+</target>
+
+<target name = "create" depends = "clean">
+<echo>Running target create </echo>
+<mkdir dir = "bin/com/megha/junit/classes"/>
+<mkdir dir = "bin/com/megha/junittest/classes"/>
+<mkdir dir = "reports"/> 
+</target>
+
+<target name = "clean">
+<echo>Running target clean</echo>
+<delete dir = "bin/com/megha/junit/classes"/>
+<delete dir = "bin/com/megha/junittest/classes"/>
+<delete dir = "reports"/>
+</target>
+
+<path id ="classpath">
+<pathelement location="C:\Users\megha iyer\Desktop\Software\selenium-java\selenium-server-standalone-2.48.2.jar" />
+<pathelement location="C:\Users\megha iyer\Desktop\Software\selenium-java\selenium-2.48.2\selenium-java-2.48.2.jar"/>
+<pathelement location="C:\Users\megha iyer\Desktop\Software\selenium-java\selenium-2.48.2\selenium-java-2.48.2-srcs.jar"/>
+<pathelement location="C:\Users\megha iyer\Desktop\Software\JavaMailAPI\javax.mail.jar"/>
+<pathelement location="C:\Users\megha iyer\Desktop\Software\JavaMailAPI\jaf-1_1_1\jaf-1.1.1\activation.jar"/>
+<pathelement location="C:\Users\megha iyer\Desktop\Software\JavaMailAPI\slf4j jars\slf4j-api-1.6.0-RC0.jar"/>
+<pathelement location="C:\Users\megha iyer\Desktop\Software\JavaMailAPI\slf4j jars\slf4j-jdk14-1.6.0-RC0.jar"/>
+<pathelement location="C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar"/>
+<pathelement location="C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar"/>
+<pathelement location="bin"/>
+</path>
+
+<target name="compile" depends = "init,create">
+<echo> Running target compile </echo>
+<javac includeantruntime = "true" classpathref="classpath" srcdir="${src}" destdir = "${dest}"/>
+<javac includeantruntime = "true" classpathref="classpath" srcdir="${test}" destdir ="${src.tests}"/>
+</target>
+
+<target name="test" depends = "compile">
+<echo> Running target test</echo>
+<junit printsummary="yes" haltonfailure="no">
+<classpath refid="classpath" />
+<classpath>
+<pathelement location="${src.tests}"/>
+<pathelement location="C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar"/>
+</classpath>                 
+<formatter type="xml" /> 
+<formatter type="plain" usefile='false'/> 
+<test name = "com.megha.junittest.VerifySendGmail" outfile="${reports.tests}/TEST-result" >
+<formatter type="xml" />
+</test>
+<batchtest fork="yes" todir="${reports.tests}">
+    <fileset dir="test">
+      <exclude name="**/TestRunner.java"/>
+    </fileset>
+</batchtest>
+</junit>
+<junitreport todir="${reports.tests}">
+<fileset dir="${reports.tests}">
+<include name="TEST-*.xml"/>
+</fileset>
+<report format="frames" todir="${reports.tests}/html"/>
+</junitreport>
+</target>
+
+<target name="emailreport" depends = "test" >         
+ <zip destfile="${reports.tests}/${test_name}.zip"
+       basedir="${reports.tests}/html"    
+       update="true"
+  />
+<!--mail mailhost="smtp.gmail.com" mailport="587" subject="Test Report" messagemimetype="text/html" enableStartTLS="true" user ="connecteduqa@gmail.com" password ="experience">
+  <from address="connecteduqa@gmail.com"/>
+  <replyto address="connecteduqa@gmail.com"/>
+  <to address="connecteduqa@gmail.com"/>
+  <message>The ${test_name} automation report zip is attached here.Please open the index.html for viewing complete report.</message>
+  <attachments>
+    <fileset dir="${reports.tests}">
+      <include name="**/*.zip"/>
+    </fileset>
+  </attachments>
+</mail-->
+ </target>
+
+</project>
