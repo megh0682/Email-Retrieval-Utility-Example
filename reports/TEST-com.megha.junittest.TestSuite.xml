@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="meghaiyer-PC" name="com.megha.junittest.TestSuite" skipped="1" tests="2" time="21.171" timestamp="2015-12-22T21:03:49">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Windows 7" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_25\jre\classes" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.apache.ant_1.9.2.v201404171502" />
+    <property name="java.runtime.version" value="1.8.0_25-b18" />
+    <property name="reports.tests" value="reports" />
+    <property name="user.name" value="megha" />
+    <property name="dest" value="bin" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin" />
+    <property name="ant.project.default-target" value="emailreport" />
+    <property name="ant.project.name" value="WEB UI AUTOMATION" />
+    <property name="java.version" value="1.8.0_25" />
+    <property name="ant.file.type.WEB UI AUTOMATION" value="file" />
+    <property name="user.timezone" value="America/Chicago" />
+    <property name="ant.file.WEB UI AUTOMATION" value="C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation\build.xml" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="src.tests" value="bin/com/megha/junittest/classes" />
+    <property name="java.class.version" value="52.0" />
+    <property name="src" value="src" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_25\jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.25-b02" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Users\megha iyer" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test" value="test" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/lib/amd64;C:\Program Files\Dell\DW WLAN Card;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Dell\Dell Data Protection\Access\Advanced\Wave\Gemalto\Access Client\v5\;C:\Program Files (x86)\NTRU Cryptosystems\NTRU TCG Software Stack\bin\;C:\Program Files\NTRU Cryptosystems\NTRU TCG Software Stack\bin\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64\;C:\Program Files\Java\jdk1.8.0_25\bin;;C:\Apache\apache-tomcat-8.0.23;C:\Users\megha iyer\Desktop\Software\Ant\apache-ant-1.9.4\bin;C:\ProgramData\Oracle\Java\javapath;C:\Users\megha iyer\Desktop\Software\Ant\apache-ant-1.9.4\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\TortoiseHg\;c:\Python27\;c:\Python27\Scripts\;C:\Python27\Lib\site-packages;C:\Program Files\jEdit;C:\Users\megha iyer\Desktop\Software\Git-2.6.4-64-bit.exe;;C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse;;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.megha.junittest.TestSuite filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation\reports\TEST-com.megha.junittest.TestSuite.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation\junitvmwatcher1865704495288374669.properties propsfile=C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation\junit4590421114914036574.properties" />
+    <property name="java.class.path" value="C:\Users\megha iyer\Desktop\Software\selenium-java\selenium-server-standalone-2.48.2.jar;C:\Users\megha iyer\Desktop\Software\selenium-java\selenium-2.48.2\selenium-java-2.48.2.jar;C:\Users\megha iyer\Desktop\Software\selenium-java\selenium-2.48.2\selenium-java-2.48.2-srcs.jar;C:\Users\megha iyer\Desktop\Software\JavaMailAPI\javax.mail.jar;C:\Users\megha iyer\Desktop\Software\JavaMailAPI\jaf-1_1_1\jaf-1.1.1\activation.jar;C:\Users\megha iyer\Desktop\Software\JavaMailAPI\slf4j jars\slf4j-api-1.6.0-RC0.jar;C:\Users\megha iyer\Desktop\Software\JavaMailAPI\slf4j jars\slf4j-jdk14-1.6.0-RC0.jar;C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar;C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation\bin;C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation\bin\com\megha\junittest\classes;C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-launcher.jar;C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant.jar;C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-junit.jar;C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="java.io.tmpdir" value="C:\Users\MEGHAI~1\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="test_name" value="JavaMail Testing Project" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="C:\Users\megha iyer\git\localWebUIAutomationRepo\Web UI Automation" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="C:\Eclipse\eclipse-java-luna-SR1-win32-x86_64\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="emailreport" />
+  </properties>
+  <testcase classname="com.megha.junittest.VerifySendGmail" name="testPrintParameters[0]" time="0.0">
+    <skipped />
+  </testcase>
+  <testcase classname="com.megha.junittest.VerifySendGmail" name="testSendingAndReceivingGmail[0]" time="20.88" />
+  <system-out><![CDATA[Executing tests in TestSendMail class.
+Executing before each test method.
+Sending to: shah.iyer@googlemail.com
+Sent successfully!
+Executed after each method.
+Finished executing tests in TestSendMail class.
+]]></system-out>
+  <system-err><![CDATA[Dec 22, 2015 3:03:49 PM com.megha.junittest.VerifySendGmail$1 starting
+INFO: testSendingAndReceivingGmail[0] being run...
+Dec 22, 2015 3:04:10 PM com.megha.junittest.VerifySendGmail testSendingAndReceivingGmail
+INFO: Email from shah.iyer@googlemail.com received by connecteduqa@gmail.com
+Dec 22, 2015 3:04:10 PM com.megha.junittest.VerifySendGmail testSendingAndReceivingGmail
+INFO: Validated subject JavaMailTest-1 Subject and body JavaMailTest-1 Body.
+]]></system-err>
+</testsuite>
