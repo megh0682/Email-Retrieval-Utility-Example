@@ -157,6 +157,14 @@ public class VerifySendGmail {
 		System.out.println("ToEmail:"+ToEmail);
 		
 	}
+	
+	@Test
+	public void testHelloUser(){
+		
+		System.out.println("Hello"+ToEmail);
+		 
+		
+	}
 		
 	@After
     public void tearDown()
