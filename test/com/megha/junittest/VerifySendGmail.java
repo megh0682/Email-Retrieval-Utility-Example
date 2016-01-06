@@ -149,7 +149,7 @@ public class VerifySendGmail {
 	e.printStackTrace();
 }
 }
-	@Ignore
+	
 	@Test(timeout=1000)
 	public void testPrintParameters(){
 		System.out.println("Subject:"+Subject);
